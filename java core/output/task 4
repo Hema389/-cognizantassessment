@@ -1,0 +1,6 @@
+output 1:
+Enter a year: 2020
+2020 is a leap year.
+output 2:
+Enter a year: 1900
+1900 is not a leap year.
