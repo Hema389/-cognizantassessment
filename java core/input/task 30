@@ -1,0 +1,13 @@
+import java.util.*;
+public class PatternMatchingSwitch {
+    public static void main(String[] args) {
+        Object obj = "Hello";
+        String result = switch (obj) {
+            case Integer i -> "Integer";
+            case String s -> "String";
+            case Double d -> "Double";
+            default -> "Unknown";
+        };
+        System.out.println(result);
+    }
+}
