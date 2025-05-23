@@ -1,1 +1,12 @@
-
+output 1:
+Enter first number: 10
+Enter second number: 5
+Choose an operation: +, -, *, /
++
+Result: 15.0
+output 2:
+Enter first number: 8
+Enter second number: 2
+Choose an operation: +, -, *, /
+/
+Result: 4.0
