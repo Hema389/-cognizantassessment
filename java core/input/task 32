@@ -1,0 +1,12 @@
+module-info.java:
+module mymodule {
+    exports com.example;
+}
+Main.java:
+package com.example;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Modular Java!");
+    }
+}
