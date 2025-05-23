@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class DataTypeDemo {
+    public static void main(String[] args) {
+        int age = 20;
+        float height = 5.8f;
+        double weight = 65.5;
+        char grade = 'A';
+        boolean isStudent = true;
+
+        System.out.println("int: " + age);
+        System.out.println("float: " + height);
+        System.out.println("double: " + weight);
+        System.out.println("char: " + grade);
+        System.out.println("boolean: " + isStudent);
+    }
+}
