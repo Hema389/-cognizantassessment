@@ -1,0 +1,27 @@
+const events = [
+  { name: "Music Fest", date: "2025-07-20", seats: 10 },
+  { name: "Art Exhibition", date: "2025-05-10", seats: 0 },
+  { name: "Tech Talk", date: "2025-08-05", seats: 5 }
+];
+
+const today = new Date("2025-05-24");
+
+events.forEach(event => {
+  const eventDate = new Date(event.date);
+  if (eventDate > today && event.seats > 0) {
+    console.log(`Upcoming Event: ${event.name} on ${event.date}`);
+  }
+});
+
+function registerEvent(event) {
+  try {
+    if (event.seats > 0) {
+      event.seats--;
+      console.log(`Registered for ${event.name}. Seats left: ${event.seats}`);
+    } else {
+      throw new Error("No seats available");
+    }
+  } catch (error) {
+    console.error(`Registration failed: ${error.message}`);
+  }
+}
