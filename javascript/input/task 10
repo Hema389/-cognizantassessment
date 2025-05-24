@@ -1,0 +1,7 @@
+const cloneEvents = [...events];
+
+function displayEvent({ name, date, category = "General", seats }) {
+  console.log(`${name} on ${date} [${category}] - ${seats} seats`);
+}
+
+cloneEvents.forEach(event => displayEvent(event));
