@@ -1,0 +1,14 @@
+const eventName = "Community Meetup";
+const eventDate = "2025-06-15";
+let availableSeats = 50;
+
+console.log(`Event: ${eventName} on ${eventDate}. Seats available: ${availableSeats}`);
+
+function register() {
+  if (availableSeats > 0) {
+    availableSeats--;
+    console.log(`Registered successfully. Remaining seats: ${availableSeats}`);
+  } else {
+    console.log("Sorry, no seats available.");
+  }
+}
