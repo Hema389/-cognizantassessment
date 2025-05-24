@@ -1,0 +1,10 @@
+import java.net.*;
+import java.io.*;
+
+public class HTTPRequestExample {
+    public static void main(String[] args) throws Exception {
+        URL url = new URL("https://www.google.com");
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        System.out.println("Response Code: " + con.getResponseCode());
+    }
+}
