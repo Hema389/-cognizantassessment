@@ -1,0 +1,14 @@
+function Event(name, date, seats) {
+  this.name = name;
+  this.date = date;
+  this.seats = seats;
+}
+
+Event.prototype.checkAvailability = function() {
+  return this.seats > 0;
+};
+
+const event = new Event("Dance Workshop", "2025-09-10", 20);
+console.log(event.checkAvailability()); // true
+
+console.log(Object.entries(event));
