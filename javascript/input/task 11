@@ -1,0 +1,29 @@
+html
+<form id="regForm">
+  <input name="username" placeholder="Name" />
+  <input name="email" type="email" placeholder="Email" />
+  <select name="eventSelect">
+    <option>Music Fest</option>
+    <option>Art Workshop</option>
+  </select>
+  <button type="submit">Submit</button>
+</form>
+<div id="error"></div>
+js
+document.querySelector("#regForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const { username, email, eventSelect } = e.target.elements;
+
+  if (!username.value || !email.value.includes("@")) {
+    document.querySelector("#error").textContent = "Invalid input";
+    return;
+  }
+
+  console.log("Form Submitted:", {
+    name: username.value,
+    email: email.value,
+    event: eventSelect.value
+  });
+
+  document.querySelector("#error").textContent = "";
+});
