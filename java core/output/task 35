@@ -1,0 +1,19 @@
+import javax.tools.*;
+import java.io.*;
+import java.lang.reflect.*;
+
+public class DynamicJava {
+    public static void main(String[] args) throws Exception {
+        String code = "public class Temp { public static void main(String[] args) { System.out.println(\"Hi Dynamic\"); } }";
+        FileWriter fw = new FileWriter("Temp.java");
+        fw.write(code);
+        fw.close();
+
+        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+        compiler.run(null, null, null, "Temp.java");
+
+        Process p = Runtime.getRuntime().exec("java Temp");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        System.out.println(reader.readLine());
+    }
+}
