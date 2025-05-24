@@ -1,0 +1,30 @@
+js
+document.querySelectorAll(".register-btn").forEach((btn, index) => {
+  btn.onclick = () => {
+    events[index].seats--;
+    btn.previousElementSibling.textContent = `Seats Available: ${events[index].seats}`;
+    if (events[index].seats <= 0) btn.disabled = true;
+    alert("You have registered!");
+  };
+});
+
+document.querySelector("#categoryFilter").onchange = (e) => {
+  const selected = e.target.value;
+  [...eventContainer.children].forEach(card => {
+    card.style.display = card.innerHTML.includes(selected) || selected === "All" ? "block" : "none";
+  });
+};
+
+document.querySelector("#searchInput").addEventListener("keydown", (e) => {
+  const keyword = e.target.value.toLowerCase();
+  [...eventContainer.children].forEach(card => {
+    card.style.display = card.innerHTML.toLowerCase().includes(keyword) ? "block" : "none";
+  });
+});
+html
+<select id="categoryFilter">
+  <option>All</option>
+  <option>Music</option>
+  <option>Art</option>
+</select>
+<input id="searchInput" placeholder="Search events..." />
