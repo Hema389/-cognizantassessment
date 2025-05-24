@@ -1,0 +1,9 @@
+const eventList = [];
+eventList.push({ name: "Baking Workshop", category: "Food" });
+eventList.push({ name: "Rock Concert", category: "Music" });
+
+const musicOnly = eventList.filter(e => e.category === "Music");
+const formatted = eventList.map(e => `Event: ${e.name}`);
+
+console.log(musicOnly);
+console.log(formatted);
