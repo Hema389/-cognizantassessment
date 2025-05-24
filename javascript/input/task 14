@@ -1,0 +1,8 @@
+html
+<button id="registerBtn">Register Now</button>
+<div class="event-box" style="display:none">Event Info Card</div>
+JS (jQuery)
+$("#registerBtn").click(() => {
+  $(".event-box").fadeIn();
+  setTimeout(() => $(".event-box").fadeOut(), 3000);
+});
