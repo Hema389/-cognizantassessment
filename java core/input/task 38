@@ -1,0 +1,10 @@
+import java.util.concurrent.*;
+
+public class ExecutorDemo {
+    public static void main(String[] args) {
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        executor.execute(() -> System.out.println("Task 1"));
+        executor.execute(() -> System.out.println("Task 2"));
+        executor.shutdown();
+    }
+}
