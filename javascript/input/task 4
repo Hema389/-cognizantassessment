@@ -1,0 +1,28 @@
+function addEvent(name, date, category) {
+  return { name, date, category, seats: 100 };
+}
+
+function registerUser(event) {
+  if (event.seats > 0) {
+    event.seats--;
+    console.log(`Registered for ${event.name}. Seats left: ${event.seats}`);
+  } else {
+    console.log("No seats available");
+  }
+}
+
+function filterEventsByCategory(events, category) {
+  return events.filter(event => event.category === category);
+}
+
+function createCategoryCounter() {
+  const counters = {};
+  return function(category) {
+    counters[category] = (counters[category] || 0) + 1;
+    return counters[category];
+  };
+}
+
+const countRegistration = createCategoryCounter();
+console.log(countRegistration("Music")); // 1
+console.log(countRegistration("Music")); // 2
