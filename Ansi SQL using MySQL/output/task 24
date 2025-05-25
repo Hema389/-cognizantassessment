@@ -1,0 +1,5 @@
+event_id | title                      | avg_session_duration
+---------|----------------------------|----------------------
+1        | Tech Innovators Meetup      | 67.5
+2        | AI & ML Conference          | 90
+3        | Frontend Development Bootcamp | 120
