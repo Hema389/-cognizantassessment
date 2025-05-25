@@ -1,0 +1,5 @@
+Output: (Assuming today is 2025-02-02, based on sample data)
+registration_date | new_users
+------------------|-----------
+2025-01-15        | 1
+2025-02-01        | 1
