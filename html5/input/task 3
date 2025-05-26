@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Community Event Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#events">Events</a> |
+    <a href="#contact">Contact</a>
+    <a href="help.html" target="_blank">Help</a>
+    <style>
+  #welcomeBanner {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+  }
+  .highlight {
+    background: yellow;
+    font-weight: bold;
+  }
+</style>
+
+<div id="welcomeBanner">
+  Hello, <span class="highlight">Resident</span>! Welcome to our event portal.
+  <span style="color: red; font-weight: bold;">Special Offer Today!</span>
+</div>
+
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <section id="home">
+  <h1>Welcome to the Community Event Portal</h1>
+</section>
+
+<section id="events">
+  <h2>Upcoming Events</h2>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Local Community</p>
+  </footer>
+
+</body>
+</html>
