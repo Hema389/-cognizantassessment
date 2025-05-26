@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Debugging with Chrome DevTools</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    ul {
+      line-height: 1.6;
+    }
+
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #output {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>10. Debugging with Chrome DevTools</h2>
+
+  <p><strong>Steps to follow in Chrome:</strong></p>
+
+  <ul>
+    <li><strong>Right-click → Inspect:</strong> Opens the DevTools panel.</li>
+    <li><strong>Elements Tab:</strong> Live-edit HTML and CSS for real-time UI changes.</li>
+    <li><strong>Console Tab:</strong> View output from <code>console.log()</code>, check for errors, and run JavaScript commands.</li>
+    <li><strong>Sources Tab:</strong> Set breakpoints, step through your JavaScript code, and watch variables.</li>
+    <li><strong>Network Tab:</strong> Monitor file loading, check API request/response status, and view payloads.</li>
+  </ul>
+
+  <p><strong>Bonus:</strong> You can also debug using <strong>VS Code</strong> with helpful extensions like:</p>
+  <ul>
+    <li><strong>Live Server:</strong> Instantly preview HTML changes.</li>
+    <li><strong>Debugger for Chrome:</strong> Connect VS Code with Chrome for integrated debugging.</li>
+  </ul>
+
+  <hr>
+
+  <h3>🔍 Example: Click and Debug</h3>
+  <button onclick="handleClick()">Click to Debug</button>
+  <div id="output"></div>
+
+  <script>
+    function handleClick() {
+      console.log("Button clicked");
+
+      const currentTime = new Date().toLocaleTimeString();
+      document.getElementById("output").innerText = "Button clicked at " + currentTime;
+
+      // Try placing a breakpoint here
+      let debugMessage = "This is a debug message";
+      console.log(debugMessage);
+    }
+  </script>
+
+</body>
+</html>
