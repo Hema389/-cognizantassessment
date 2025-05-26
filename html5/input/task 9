@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Find Nearby Events</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #locationDisplay {
+      margin-top: 15px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Find Nearby Events</h3>
+  <button onclick="getLocation()">📍 Find Nearby Events</button>
+  <div id="locationDisplay"></div>
+
+  <script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showCoords, handleError, {
+          enableHighAccuracy: true,
+          timeout: 5000
+        });
+      } else {
+        alert("Geolocation not supported by your browser.");
+      }
+    }
+
+    function showCoords(pos) {
+      const { latitude, longitude } = pos.coords;
+      document.getElementById("locationDisplay").innerText = 
+        `📌 Latitude: ${latitude.toFixed(4)}, Longitude: ${longitude.toFixed(4)}`;
+    }
+
+    function handleError(err) {
+      document.getElementById("locationDisplay").innerText = 
+        `❌ Error: ${err.message}`;
+    }
+  </script>
+
+</body>
+</html>
