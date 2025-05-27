@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Display Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container my-5">
+
+  <h1 class="mb-4">Responsive Sections</h1>
+
+  <!-- Visible only on small screens (smaller than md) -->
+  <div class="p-4 bg-primary text-white rounded mb-3 d-block d-md-none">
+    <h4>Small Screen Section</h4>
+    <p>This section is visible only on small screens (xs and sm).</p>
+  </div>
+
+  <!-- Visible only on medium screens and up -->
+  <div class="p-4 bg-success text-white rounded mb-3 d-none d-md-block d-lg-none">
+    <h4>Medium Screen Section</h4>
+    <p>This section shows from md (≥768px) up to but not including lg (992px).</p>
+  </div>
+
+  <!-- Visible only on large screens and up -->
+  <div class="p-4 bg-warning text-dark rounded mb-3 d-none d-lg-flex">
+    <h4>Large Screen Section</h4>
+    <p>This section is visible on large screens (lg ≥ 992px) and wider.</p>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
