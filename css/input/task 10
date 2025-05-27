@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Design with Flexbox - Community Portal</title>
+  <style>
+    /* Flex layout */
+    .navMenu {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .navMenu li {
+      margin: 10px;
+    }
+
+    .navMenu li a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      padding: 8px 15px;
+      display: block;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navMenu li a:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    /* Responsive layout */
+    @media screen and (max-width: 768px) {
+      .navMenu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      body {
+        font-size: 90%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="navMenu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <img src="https://via.placeholder.com/600x300" alt="Community Event" />
+
+  <p>Welcome to the Local Community Event Portal! Stay tuned for the latest updates.</p>
+
+</body>
+</html>
