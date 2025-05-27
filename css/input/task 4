@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color & Background Styling - Community Portal</title>
+
+  <style>
+    /* Reset Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Background with fallback */
+    body {
+      background-color: #ffffff;
+      background-image: url('images/city-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+
+    /* Gradient for section headers */
+    h2 {
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Event card container */
+    .eventCard {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 500px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Paragraph styling inside event card */
+    .eventCard p {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Upcoming Events</h2>
+
+  <div class="eventCard">
+    <h3>Music Festival</h3>
+    <p>Experience local bands and artists live in the central park.</p>
+  </div>
+
+  <div class="eventCard">
+    <h3>Volunteer Cleanup Drive</h3>
+    <p>Help keep our neighborhood clean. Saturday at 8 AM.</p>
+  </div>
+
+</body>
+</html>
