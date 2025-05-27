@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Debug & Test Example</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Header styles */
+    #mainHeader {
+      background-color: #dcdcdc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation styles */
+    .navMenu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #f5f5f5;
+      padding: 10px 0;
+    }
+
+    .navMenu li a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navMenu li a:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    /* Event card */
+    .eventCard {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header id="mainHeader">
+    <h1 class="pageTitle">Local Community Event Portal</h1>
+  </header>
+
+  <nav>
+    <ul class="navMenu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="eventCard">
+    <h2>Upcoming Event</h2>
+    <p>Join us for a community picnic at the park!</p>
+  </section>
+
+</body>
+</html>
