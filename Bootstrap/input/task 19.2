@@ -1,0 +1,18 @@
+# Create your custom variables file
+cat > src/scss/_custom-variables.scss <<EOF
+// Override Bootstrap default variables here
+$primary: #ff5722;            // Custom primary color (deep orange)
+$border-radius: 1.5rem;       // Custom border radius (larger rounded corners)
+EOF
+
+# Modify your custom.scss to import variables first, then Bootstrap
+cat > src/scss/custom.scss <<EOF
+// Import your custom variables BEFORE bootstrap
+@import "custom-variables";
+
+// Now import Bootstrap's Sass source
+@import "../node_modules/bootstrap/scss/bootstrap";
+EOF
+
+# Recompile Sass to CSS
+npx sass src/scss/custom.scss dist/custom.css
