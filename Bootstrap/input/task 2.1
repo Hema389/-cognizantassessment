@@ -1,0 +1,40 @@
+1. css/
+Contains:
+
+bootstrap.css — The full, unminified CSS source file with all Bootstrap styles.
+
+bootstrap.min.css — The minified (compressed) version optimized for production (smaller file size).
+
+Sometimes there are source maps (.map files) for debugging.
+
+Purpose:
+This folder contains all the stylesheets needed for Bootstrap’s layout, components, utilities, and responsive grid system.
+When you link bootstrap.min.css in your HTML, you get all Bootstrap's default styling applied to your page.
+
+2. js/
+Contains:
+
+bootstrap.bundle.js — The full, unminified JavaScript bundle file that includes Bootstrap’s JavaScript plugins and Popper.js (needed for tooltips, dropdowns, etc.).
+
+bootstrap.bundle.min.js — The minified, compressed version of the bundle for production.
+
+bootstrap.js and bootstrap.min.js — Same as above but without Popper.js bundled in (you’d need to include Popper separately if you use these).
+
+Source maps (.map files) for debugging.
+
+Purpose:
+This folder holds all the JavaScript files that power Bootstrap’s interactive components like modals, tooltips, carousels, dropdown menus, collapse elements, and more.
+The bundle versions include Popper.js (a dependency for positioning tooltips and dropdowns), so you don’t need extra script tags for Popper if you use these.
+
+3. icons/
+Contains:
+
+Bootstrap Icons in SVG format and possibly other formats.
+
+Usually files like .svg and CSS or fonts for the icon set.
+
+Purpose:
+This folder contains the Bootstrap Icons library, which is a separate project by Bootstrap providing open-source SVG icons designed to work seamlessly with Bootstrap.
+You can use these icons in your web projects for UI elements like buttons, alerts, navigation, and more.
+To use them, you either include the CSS provided here or directly use the SVG files inline or as images.
+
