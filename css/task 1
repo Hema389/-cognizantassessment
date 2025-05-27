@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Community Event Portal</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* Body styles */
+    body {
+      background-color: #f0f8ff;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Inline style -->
+  <h1 style="color: red;">Welcome to the Community Portal</h1>
+
+  <h2 id="mainHeader">Upcoming Events</h2>
+
+  <div class="eventCard">
+    <h3>Music Fest</h3>
+    <p>Enjoy live music this weekend.</p>
+  </div>
+
+</body>
+</html>
