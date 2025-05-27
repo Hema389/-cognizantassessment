@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Table Styling - Community Portal</title>
+  <style>
+    /* Table styling */
+    .eventTable {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    .eventTable th, .eventTable td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .eventTable tr:nth-child(even) {
+      background-color: #eeeeee;
+    }
+  </style>
+</head>
+<body>
+
+  <table class="eventTable">
+    <tr>
+      <th>Event</th>
+      <th>Date</th>
+    </tr>
+    <tr>
+      <td>Food Drive</td>
+      <td>June 5</td>
+    </tr>
+    <tr>
+      <td>Park Clean-up</td>
+      <td>June 10</td>
+    </tr>
+  </table>
+
+</body>
+</html>
