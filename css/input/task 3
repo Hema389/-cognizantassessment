@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selectors Playground - Local Community Event Portal</title>
+
+  <style>
+    /* Universal selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Element selector */
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* ID selector */
+    #mainHeader {
+      background-color: #dcdcdc;
+      padding: 10px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    /* Class selector */
+    .eventCard {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 8px;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Grouping selector */
+    h3, p {
+      font-family: Arial, sans-serif;
+      color: #555;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ID selector example -->
+  <h2 id="mainHeader">Community Events</h2>
+
+  <!-- Class selector example -->
+  <div class="eventCard">
+    <h3>Tree Plantation Drive</h3>
+    <p>Join hands in greening the city this Saturday at 9 AM.</p>
+  </div>
+
+  <div class="eventCard">
+    <h3>Art & Craft Exhibition</h3>
+    <p>Local talents showcase their work. Visit us at City Hall this Sunday.</p>
+  </div>
+
+</body>
+</html>
