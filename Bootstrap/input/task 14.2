@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Sidebar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Optional: fix sidebar height */
+    .sidebar {
+      min-height: 100vh;
+      background-color: #f8f9fa;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Sidebar: hidden on xs & sm, visible from md -->
+    <nav class="col-md-3 d-none d-md-block sidebar">
+      <h4>Sidebar</h4>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content: full width on small, reduced width on md+ -->
+    <main class="col-12 col-md-9">
+      <h1>Main Content Area</h1>
+      <p>This content takes full width on small screens but leaves space for sidebar on tablets and larger.</p>
+    </main>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
