@@ -1,0 +1,28 @@
+mkdir bootstrap-sass-project && cd bootstrap-sass-project
+npm init -y
+npm install bootstrap sass
+
+mkdir -p src/scss dist
+
+# Create custom.scss with Bootstrap import
+echo '@import "../node_modules/bootstrap/scss/bootstrap";' > src/scss/custom.scss
+
+# Create basic index.html linking the compiled CSS
+cat > dist/index.html <<EOF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bootstrap 5 with Sass</title>
+<link rel="stylesheet" href="custom.css" />
+</head>
+<body class="p-5 text-center bg-light">
+  <h1 class="text-primary">Bootstrap 5 with Sass setup!</h1>
+  <button class="btn btn-success">Click Me</button>
+</body>
+</html>
+EOF
+
+# Compile Sass to CSS
+npx sass src/scss/custom.scss dist/custom.css
