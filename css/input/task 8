@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Box Model & Layout Control - Community Portal</title>
+  <style>
+    /* Box model demonstration */
+    .eventCard {
+      border: 2px solid #ddd;
+      padding: 20px;
+      margin: 15px;
+    }
+
+    /* Outline for form field */
+    input:focus {
+      outline: 2px solid #007BFF;
+    }
+
+    /* Visibility test */
+    .hidden-section {
+      visibility: hidden;
+    }
+    .removed-section {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="eventCard">
+    <h3>Community Meetup</h3>
+    <p>Join us for networking and discussions!</p>
+  </div>
+
+  <form>
+    <label for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" />
+  </form>
+
+  <div class="hidden-section">
+    <p>This section is hidden but still occupies space.</p>
+  </div>
+
+  <div class="removed-section">
+    <p>This section is completely removed from layout.</p>
+  </div>
+
+</body>
+</html>
