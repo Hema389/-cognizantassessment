@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multiple Columns - Community Portal</title>
+  <style>
+    /* Multi-column layout */
+    .news-article {
+      column-count: 2;
+      column-gap: 30px;
+      column-rule: 1px solid gray;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="news-article">
+    <h2>Community Bulletin</h2>
+    <p>
+      Welcome to the community bulletin! Here you will find lots of updates and announcements that keep everyone informed about local events, activities, and opportunities. We encourage all community members to participate actively and share their thoughts. Stay tuned for upcoming park clean-ups, charity drives, educational workshops, and more. Let’s build a stronger, healthier, and happier community together.
+    </p>
+  </section>
+
+</body>
+</html>
